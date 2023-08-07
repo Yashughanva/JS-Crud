@@ -110,7 +110,7 @@ function test() {
 
 function searchdata() {
     let employee = document.getElementById("search").value;
-    let stud = Revision.filter((item) => item.username === employee);
+    let stud = Revision.filter((item) => item.username === employee || item.useremail === employee || item.password === employee || item.phone === employee || item.date === employee);
     Revision = stud;
     console.log("stud", stud);
     rendertable();
