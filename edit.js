@@ -53,6 +53,24 @@ const sortdata = () => {
     console.log("dataa", dataa);
     rendertable();
 }
+const sortdata1 = () => {
+    const dataa = Revision.sort((a, b) => a.gender.localeCompare(b.gender));
+    Revision = dataa;
+    console.log("dataa", dataa);
+    rendertable();
+}
+const sortdata2 = () => {
+    const dataa = Revision.sort((a, b) => a.useremail.localeCompare(b.useremail));
+    Revision = dataa;
+    console.log("dataa", dataa);
+    rendertable();
+}
+const sortdata3 = () => {
+    const dataa = Revision.sort((a, b) => a.date.localeCompare(b.date));
+    Revision = dataa;
+    console.log("dataa", dataa);
+    rendertable();
+}
 function test() {
     let id = document.getElementById('id').value
     let name = document.getElementById('name').value
