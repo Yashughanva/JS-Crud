@@ -86,6 +86,8 @@ function test() {
     let psw = document.getElementById('psw').value
     let phone = document.getElementById('phone').value
     let date = document.getElementById('date').value
+    
+    //checkbox
     let box = " "
     if (document.getElementById('true').checked) {
         box += document.getElementById('true').value
